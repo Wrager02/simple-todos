@@ -10,13 +10,13 @@
     </header>
 
     <ul>
-        {{#each tasks}}
-            {{> task}}
+        {{#each featuredGifs}}
+            {{> featuredGif}}
         {{/each}}
     </ul>
 </div>
 </body>
 
-<template name="task">
-    <li>{{text}}</li>
+<template name="featuredGif">
+    <img src="{{url}}">
 </template>
