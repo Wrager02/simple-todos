@@ -1,22 +1,39 @@
 <body>
-<div class="container">
-    <header>
-        <h1>Todo List</h1>
+<section>
 
-        <form class="new-task">
-            <input type="text" name="text" placeholder="Type to add new tasks" />
-        </form>
+</section>
 
-    </header>
+<section>
 
     <ul>
         {{#each featuredGifs}}
             {{> featuredGif}}
         {{/each}}
     </ul>
-</div>
+
+</section>
+
+<section>
+
+    <form class="new-search">
+        <input type="text" name="text" placeholder="Search"/>
+    </form>
+
+    <ul>
+        {{#each results}}
+            {{> result}}
+        {{/each}}
+    </ul>
+
+</section>
+
+
 </body>
 
 <template name="featuredGif">
+    <img src="{{url}}">
+</template>
+
+<template name="result">
     <img src="{{url}}">
 </template>
