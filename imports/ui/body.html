@@ -1,31 +1,33 @@
 <body>
-<section>
 
-</section>
+<div id="header">
+    <h1>GIFER</h1>
+</div>
 
-<section>
+<div id="featured">
+    <h2>FEATURED</h2>
+    <div class="gifContainer">
+        <div class="gif">
+            {{#each featuredGifs}}
+                {{> featuredGif}}
+            {{/each}}
+        </div>
+    </div>
+</div>
 
-    <ul>
-        {{#each featuredGifs}}
-            {{> featuredGif}}
-        {{/each}}
-    </ul>
-
-</section>
-
-<section>
-
+<div id="search">
     <form class="new-search">
         <input type="text" name="text" placeholder="Search"/>
     </form>
 
-    <ul>
-        {{#each results}}
-            {{> result}}
-        {{/each}}
-    </ul>
-
-</section>
+    <div class="gifContainer">
+        <div class="gif">
+            {{#each results}}
+                {{> result}}
+            {{/each}}
+        </div>
+    </div>
+</div>
 
 
 </body>
