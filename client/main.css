@@ -23,6 +23,9 @@ h1 {
     width: 600px;
     height: 600px;
     background-color: white;
+    -webkit-box-shadow: 10px 10px 25px -11px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 25px -11px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 25px -11px rgba(0,0,0,0.75);
 
 }
 
@@ -82,9 +85,9 @@ h2 {
     font-family: Dubai, sans-serif;
     font-size: 16px;
     border: none;
-    -webkit-box-shadow: 5px 5px 40px -11px rgba(44, 47, 51, 0.61);
-    -moz-box-shadow: 5px 5px 40px -11px rgba(44, 47, 51, 0.61);
-    box-shadow: 5px 5px 40px -11px rgba(44, 47, 51, 0.61);
+    -webkit-box-shadow: 10px 10px 25px -11px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 25px -11px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 25px -11px rgba(0,0,0,0.75);
     transition: 0.5s;
 }
 
