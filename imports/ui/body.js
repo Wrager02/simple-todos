@@ -25,6 +25,14 @@ Template.body.events({
         Meteor.call("search", text);
 
         target.text.value = "";
+    },
+    'click #en'(event) {
+        const target = event.target;
+        TAPi18n.setLanguage(target.value);
+    },
+    'click #de'(event) {
+        const target = event.target;
+        TAPi18n.setLanguage(target.value);
     }
 })
 
