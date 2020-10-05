@@ -27,3 +27,4 @@ Template.body.events({
         target.text.value = "";
     }
 })
+
