@@ -8,11 +8,11 @@ import './body.html';
 Template.body.helpers({
     featuredGifs() {
         // Show newest tasks at the top
-        return FeaturedGifs.find({});
+        return FeaturedGifs.find();
     },
     results() {
         // Show newest tasks at the top
-        return Results.find({}, {});
+        return Results.find();
     }
 });
 

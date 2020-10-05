@@ -37,6 +37,5 @@ Meteor.methods({
     }
 );
 
-
 let search = () => {
 }
