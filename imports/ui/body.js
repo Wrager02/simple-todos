@@ -47,5 +47,11 @@ Template.body.events({
         const target = event.target;
         TAPi18n.setLanguage(target.value);
     }
-})
+});
+
+Template.body.rendered = function () {
+        $('#datetimepicker2').datetimepicker({
+            locale: TAPi18n.getLanguage()
+        });
+    };
 

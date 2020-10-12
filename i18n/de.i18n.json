@@ -1,5 +1,7 @@
 {
   "FEATURED":  "VORGESTELLT",
   "TITLE": "GEPER",
-  "SEARCH": "Suche"
+  "SEARCH": "Suche",
+  "CURRENCY": "Kosten für eine Suche: ",
+  "UNNECESSARY": "UNNÖTIG"
 }
