@@ -13,6 +13,23 @@ Template.body.helpers({
     results() {
         // Show newest tasks at the top
         return Results.find();
+    },
+    date() {
+        const event = new Date();
+
+        const options = { year: 'numeric', month: 'numeric', day: 'numeric', hour: 'numeric', minute: 'numeric' };
+
+        return event.toLocaleDateString(TAPi18n.getLanguage(), options);
+    },
+    currency() {
+        let dollar = 100;
+
+        switch(TAPi18n.getLanguage()) {
+            case 'en':
+                return dollar + "$";
+            case 'de':
+                return dollar*0.85 + "€";
+        }
     }
 });
 

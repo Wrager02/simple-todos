@@ -14,7 +14,7 @@
 
 <div id="featured">
     <h2>{{_ "FEATURED"}}</h2>
-    <h4>{{_ "DATE"}}</h4>
+    <h4>{{date}}</h4>
     <div class="gifContainer">
         <div class="gif">
             {{#each featuredGifs}}
@@ -30,6 +30,7 @@
             <input id="search-input" type="text" name="text" placeholder="{{_ "SEARCH"}}"/>
             <i class="fas fa-search"></i>
         </div>
+        <h4 id="currency">Cost for one search: {{currency}}</h4>
     </form>
 
     <div class="gifContainer">
@@ -50,4 +51,12 @@
 
 <template name="result">
     <img src="{{url}}">
+</template>
+
+<template name="date">
+    <p>{{date}}</p>
+</template>
+
+<template name="currency">
+    <p>{{currency}}</p>
 </template>
