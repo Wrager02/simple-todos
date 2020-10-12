@@ -1,13 +1,12 @@
 <body>
-
-<diV>
-    <select id="language-select">
-        <option value="en">Englisch</option>
-        <option value="de">Deutsch</option>
-    </select>
-</diV>
-
 <div id="header">
+    <div id="select-container">
+        Language:
+        <select id="language-select">
+            <option value="en">{{_ "ENGLISH"}}</option>
+            <option value="de">{{_ "GERMAN"}}</option>
+        </select>
+    </div>
     <div id="box"></div>
     <h1>{{_ "TITLE"}}</h1>
 </div>
@@ -44,13 +43,18 @@
 
 <div id="unnecessary">
     <h2 id="unnecessaryHeader">{{_ "UNNECESSARY"}}</h2>
-    <div class='col-sm-6'>
-        <div class="form-group">
-            <div class='input-group date' id='datetimepicker2'>
-                <input type='text' class="form-control" />
-                <span class="input-group-addon">
+    <div id="unnecessary-container">
+        <div>
+            <button>{{_ "BUTTONTEXT"}}</button>
+        </div>
+        <div class='col-sm-6'>
+            <div class="form-group">
+                <div class='input-group date' id='datetimepicker2'>
+                    <input type='text' class="form-control"/>
+                    <span class="input-group-addon">
                <span class="glyphicon glyphicon-calendar"></span>
                </span>
+                </div>
             </div>
         </div>
     </div>
