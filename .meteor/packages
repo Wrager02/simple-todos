@@ -25,3 +25,5 @@ http
 tap:i18n
 twbs:bootstrap
 tsega:bootstrap3-datetimepicker
+momentjs:moment
+rzymek:moment-locales

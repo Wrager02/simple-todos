@@ -3,6 +3,7 @@ import { Template } from 'meteor/templating';
 import { FeaturedGifs } from '../api/collections.js';
 import { Results } from '../api/collections.js';
 
+
 import './body.html';
 
 Template.body.helpers({
@@ -51,7 +52,7 @@ Template.body.events({
 
 Template.body.rendered = function () {
         $('#datetimepicker2').datetimepicker({
-            locale: TAPi18n.getLanguage()
+            locale: 'de'
         });
     };
 
